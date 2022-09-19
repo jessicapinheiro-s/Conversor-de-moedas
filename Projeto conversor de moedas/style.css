@@ -1,6 +1,9 @@
 .conteiner-principal-moeda{
-    display: block;
+    display: none;
 }
 .moedas-campos{
     display: flex;
+}
+.conteiner-principal-moeda.aparecer{
+    display: block;
 }
