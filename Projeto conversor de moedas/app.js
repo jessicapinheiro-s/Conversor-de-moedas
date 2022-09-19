@@ -1,8 +1,14 @@
-function selectMoeda (){
-    let checkboxes = document.getElementsByName('check-moeda');
-    
-    if (checkboxes[0].checked){
-        document.querySelector('.conteiner-principal-moeda').classList.add('aparecer');
-    }
-}
-selectMoeda ();
+document.getElementById('check-dolar').addEventListener('click', function selectMoedaDolar() {
+    let moedaConverter = document.querySelector('label#moedaConverter');
+    moedaConverter.innerHTML = `Dolar`;
+})
+
+document.getElementById('check-euro').addEventListener('click', function selectMoedaEuro() {
+    let moedaConverter = document.querySelector('label#moedaConverter');
+    moedaConverter.innerHTML = `Euro`;
+})
+
+document.getElementById('check-libra').addEventListener('click', function selectMoedaLibra() {
+    let moedaConverter = document.querySelector('label#moedaConverter');
+    moedaConverter.innerHTML = `Libra`;
+})

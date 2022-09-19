@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,23 +10,26 @@
 <body>
     <section class="conteiner-principal-moedas-options">
         <div class="moedas-options">
-            <label for="check-dolar"></label>
-            <input type="checkbox" id="check-dolar" name="check-moeda">
-            <label for="check-euro"></label>
-            <input type="checkbox" id="check-euro" name="check-moeda">
-            <label for="check-libra"></label>
-            <input type="checkbox" id="check-libra" name="check-moeda">
+            <input type="radio" id="check-dolar" name="check-moedas">
+            <label for="check-dolar">Dolar</label>
+            <br>
+            <input type="radio" id="check-euro" name="check-moedas">
+            <label for="check-euro">Euro</label>
+            <br>
+            <input type="radio" id="check-libra" name="check-moedas">
+            <label for="check-libra">Libra</label>
+            <br>
         </div>
     </section>
     <section class="conteiner-principal-moeda">
         <div class="moedas-campos">
             <div>
-                <label for="moedaDolar"></label>
+                <label for="moedaConverter" id="moedaConverter">Moeda a converter</label>
                 <br>
-                <input type="text" id="moedaDolar">
+                <input type="text" id="moedaConverter">
             </div>
             <div>
-                <label for="moedaBr"></label>
+                <label for="moedaBr" >Real</label>
                 <br>
                 <input type="text" id="moedaBr">
             </div>
